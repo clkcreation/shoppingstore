@@ -16,10 +16,15 @@
     align-items: center;
     padding: 18px;
 }
+.cart-sign{
+    margin-top: 20px;
+}
+
 nav{
     flex: 1;
     text-align: right;
 }
+
 nav ul{
     list-style: none;
 }
@@ -232,4 +237,39 @@ h3{
 }
 .copyright{
     text-align: center;
+}
+
+
+.navbar i{
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    display: none;
+    
+}
+
+@media(max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        background: rgb(44, 44, 44);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.7s;
+    }
+    nav ul li{
+        display:block;
+        margin: 8px 0;
+        margin-right: 12px;
+    }
+    .navbar i{
+        display:block;
+        cursor: pointer;
+    }
+    .cart-sign{
+        margin-top: 0px;
+        margin-right: 8px;
+    }
+
+    
 }
